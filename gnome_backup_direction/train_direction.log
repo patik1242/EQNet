@@ -1,0 +1,29 @@
+=== BCE alpha=50, 25 epochs ===
+train 326  val 97  (don't care: 13/11)
+epoch  1 train loss 0.52550 (52s)
+epoch  5 train loss 0.21636 (283s)
+epoch 10 train loss 0.09765 (565s)
+epoch 15 train loss 0.05948 (814s)
+epoch 20 train loss 0.04410 (1065s)
+epoch 25 train loss 0.03661 (1315s)
+[val model   ] targets 63  recall@15deg 0.10  median 61.9 deg  p90 145.2 deg  | AUC wall vs noise 0.783
+  collapse check (val walls): p(true peak) 0.0131 vs p(background) 0.0134 (x1.0) | max p per image: mean 0.494
+  distinct argmax positions 22/63 (1 = same pixel for every sample) | BCE model 0.0186 vs constant mean-heatmap 0.0049
+[val classical] recall@15deg 0.89  median 4.2 deg (meta.csv base_*; detections on the strongest channel)
+[val random px] recall@15deg 0.02
+saved gnome/dir_bce.png
+
+=== softmax, 25 epochs ===
+train 326  val 97  (don't care: 13/11)
+epoch  1 train loss 10.37448 (50s)
+epoch  5 train loss 5.17195 (243s)
+epoch 10 train loss 5.12361 (497s)
+epoch 15 train loss 5.11073 (747s)
+epoch 20 train loss 5.11181 (1002s)
+epoch 25 train loss 5.10770 (1251s)
+[val model   ] targets 63  recall@15deg 0.05  median 46.6 deg  p90 85.0 deg  | AUC wall vs noise 0.398
+  collapse check (val walls): p(true peak) 0.4953 vs p(background) 0.4601 (x1.1) | max p per image: mean 0.996
+  distinct argmax positions 31/63 (1 = same pixel for every sample) | BCE model 0.7004 vs constant mean-heatmap 0.0049
+[val classical] recall@15deg 0.89  median 4.2 deg (meta.csv base_*; detections on the strongest channel)
+[val random px] recall@15deg 0.02
+saved gnome/dir_softmax.png
