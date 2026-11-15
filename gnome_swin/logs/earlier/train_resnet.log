@@ -1,0 +1,12 @@
+backbone=resnet tryb=train próbek train=43 eval={'val': 9, 'test': 14}
+  baseline 'średnia mapa' val: mediana błędu kąta 58.6 deg, MSE 0.0106
+  baseline 'średnia mapa' test: mediana błędu kąta 50.8 deg, MSE 0.0125
+parametrów: 1,070,881
+ep  10 loss 0.0161 (107s) | val: kąt med 42.6 śr 53.0 deg, <15deg 0.00, wys.max 0.62 (cel ~1), MSE 0.0129 | test: kąt med 76.4 śr 74.3 deg, <15deg 0.00, wys.max 0.58 (cel ~1), MSE 0.0143
+ep  20 loss 0.0152 (213s) | val: kąt med 45.9 śr 52.3 deg, <15deg 0.00, wys.max 0.70 (cel ~1), MSE 0.0141 | test: kąt med 68.8 śr 66.0 deg, <15deg 0.00, wys.max 0.68 (cel ~1), MSE 0.0150
+ep  30 loss 0.0143 (320s) | val: kąt med 55.0 śr 56.7 deg, <15deg 0.00, wys.max 0.76 (cel ~1), MSE 0.0141 | test: kąt med 65.4 śr 61.7 deg, <15deg 0.00, wys.max 0.71 (cel ~1), MSE 0.0159
+ep  40 loss 0.0140 (427s) | val: kąt med 64.1 śr 61.3 deg, <15deg 0.00, wys.max 0.86 (cel ~1), MSE 0.0148 | test: kąt med 68.2 śr 64.7 deg, <15deg 0.00, wys.max 0.81 (cel ~1), MSE 0.0173
+ep  50 loss 0.0134 (532s) | val: kąt med 46.5 śr 58.0 deg, <15deg 0.00, wys.max 0.74 (cel ~1), MSE 0.0150 | test: kąt med 68.2 śr 63.5 deg, <15deg 0.00, wys.max 0.73 (cel ~1), MSE 0.0167
+ep  60 loss 0.0133 (647s) | val: kąt med 47.9 śr 55.1 deg, <15deg 0.00, wys.max 0.87 (cel ~1), MSE 0.0155 | test: kąt med 67.7 śr 63.9 deg, <15deg 0.00, wys.max 0.87 (cel ~1), MSE 0.0189
+ep  70 loss 0.0128 (754s) | val: kąt med 50.1 śr 58.7 deg, <15deg 0.00, wys.max 0.81 (cel ~1), MSE 0.0153 | test: kąt med 68.2 śr 63.3 deg, <15deg 0.00, wys.max 0.79 (cel ~1), MSE 0.0182
+ep  80 loss 0.0127 (796s) | val: kąt med 55.0 śr 66.8 deg, <15deg 0.00, wys.max 0.77 (cel ~1), MSE 0.0152 | test: kąt med 67.5 śr 65.0 deg, <15deg 0.00, wys.max 0.83 (cel ~1), MSE 0.0185

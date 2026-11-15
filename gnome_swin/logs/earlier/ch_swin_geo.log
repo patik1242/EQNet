@@ -1,0 +1,10 @@
+{'backbone': 'swin', 'mode': 'overfit', 'target': 'channel', 'n': 8, 'epochs': 60, 'bs': 8, 'lr': 0.001, 'eval_every': 10, 'sd': 0.0, 'clip': 0.0, 'geometry': True, 'norm': 'group'}
+próbek train=8 eval={'train(te same)': 8}
+  baseline 'średnia mapa' train(te same): mediana błędu kąta 65.4 deg, MSE 0.0171
+parametrów: 976,021
+ep  10 loss 0.0573 norma_grad 1.19 (192s) | train(te same): kąt med 67.1 deg, <15deg 0.00, korelacja 0.07, MSE eval 0.0463 / train-mode 0.0463
+ep  20 loss 0.0291 norma_grad 0.50 (368s) | train(te same): kąt med 39.0 deg, <15deg 0.25, korelacja -0.02, MSE eval 0.0270 / train-mode 0.0270
+ep  30 loss 0.0204 norma_grad 0.26 (542s) | train(te same): kąt med 52.7 deg, <15deg 0.12, korelacja 0.15, MSE eval 0.0203 / train-mode 0.0203
+ep  40 loss 0.0190 norma_grad 0.21 (710s) | train(te same): kąt med 58.4 deg, <15deg 0.12, korelacja 0.22, MSE eval 0.0189 / train-mode 0.0189
+ep  50 loss 0.0186 norma_grad 0.14 (822s) | train(te same): kąt med 69.0 deg, <15deg 0.00, korelacja 0.23, MSE eval 0.0185 / train-mode 0.0185
+ep  60 loss 0.0184 norma_grad 0.07 (950s) | train(te same): kąt med 49.8 deg, <15deg 0.38, korelacja 0.24, MSE eval 0.0183 / train-mode 0.0183

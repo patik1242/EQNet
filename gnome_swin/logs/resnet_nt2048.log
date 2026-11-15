@@ -1,0 +1,11 @@
+{'backbone': 'resnet', 'mode': 'overfit', 'target': 'channel', 'n': 8, 'epochs': 100, 'bs': 8, 'lr': 0.001, 'eval_every': 20, 'sd': 0.0, 'clip': 0.0, 'geometry': True, 'norm': 'group', 'nt': 2048, 'win_t': 7, 'threads': 2}
+próbek train=8 eval={'train(te same)': 8}
+  baseline 'średnia mapa' train(te same): mediana błędu kąta 65.4 deg, MSE 0.0171
+parametrów: 1,071,777
+przed treningiem: zależność od innych stacji 0.00e+00, rozrzut cech między próbkami 0.099
+ep  20 loss 0.0174 norma_grad 0.10 (63s) | train(te same): kąt med 63.1 deg, <15deg 0.00, korelacja 0.11, MSE eval 0.1668 / train-mode 0.0174
+ep  40 loss 0.0150 norma_grad 0.04 (134s) | train(te same): kąt med 16.0 deg, <15deg 0.38, korelacja 0.28, MSE eval 0.0271 / train-mode 0.0149
+ep  60 loss 0.0134 norma_grad 0.02 (205s) | train(te same): kąt med 9.9 deg, <15deg 0.62, korelacja 0.51, MSE eval 0.0148 / train-mode 0.0133
+ep  80 loss 0.0122 norma_grad 0.02 (277s) | train(te same): kąt med 9.8 deg, <15deg 0.62, korelacja 0.59, MSE eval 0.0131 / train-mode 0.0121
+ep 100 loss 0.0112 norma_grad 0.03 (344s) | train(te same): kąt med 8.9 deg, <15deg 0.75, korelacja 0.63, MSE eval 0.0120 / train-mode 0.0112
+po treningu: zależność od innych stacji 0.00e+00 (przed: 0.00e+00), rozrzut cech między próbkami 0.335 (przed: 0.099)

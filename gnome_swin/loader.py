@@ -13,7 +13,9 @@ import pandas as pd
 import torch
 
 DEFAULT_CSV = Path(__file__).resolve().parents[1] / "datasets" / "signals.csv"
-WINDOW_S = 600.0  #signals.csv zawiera piki z 600 s 
+#signals.csv zawiera piki z 600 s, ale akumulator (cel) powstaje tylko z pików z ostatnich 120 s (README),
+#więc wejście też ograniczamy do 120 s: t_rel_s w (-120, 0]
+WINDOW_S = 120.0
 NT = 2048
 
 def load_signals(path=DEFAULT_CSV):
@@ -45,6 +47,7 @@ def describe(df):
 #wejście musi mieć 3 kanały 
 def sample_to_tensor(df: pd.DataFrame, sample_id: int, sensors: list, nt: int = NT, window_s: float = WINDOW_S):
     peaks = df[df.sample_id == sample_id]
+    peaks = peaks[peaks.t_rel_s > -window_s]  # starsze piki nie wchodzą do akumulatora, więc ich nie bierzemy
     x = np.zeros((3, nt, len(sensors)), dtype=np.float32)
 
     bins = np.clip(((peaks.t_rel_s.values + window_s) / window_s * nt).astype(int), 0, nt - 1)

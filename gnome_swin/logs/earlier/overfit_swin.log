@@ -1,0 +1,13 @@
+backbone=swin tryb=overfit próbek train=8 eval={'train(te same)': 8}
+  baseline 'średnia mapa' train(te same): mediana błędu kąta 49.1 deg, MSE 0.0145
+parametrów: 975,765
+ep  10 loss 0.0215 (171s) | train(te same): kąt med 63.9 śr 72.6 deg, <15deg 0.00, wys.max 1.29 (cel ~1), MSE 0.7525
+ep  20 loss 0.0209 (301s) | train(te same): kąt med 89.0 śr 84.1 deg, <15deg 0.00, wys.max 1.38 (cel ~1), MSE 0.9148
+ep  30 loss 0.0190 (399s) | train(te same): kąt med 76.9 śr 79.0 deg, <15deg 0.00, wys.max 1.03 (cel ~1), MSE 0.3982
+ep  40 loss 0.0173 (544s) | train(te same): kąt med 89.0 śr 83.1 deg, <15deg 0.00, wys.max 0.77 (cel ~1), MSE 0.1583
+ep  50 loss 0.0180 (679s) | train(te same): kąt med 89.0 śr 82.8 deg, <15deg 0.00, wys.max 0.54 (cel ~1), MSE 0.0432
+ep  60 loss 0.0171 (814s) | train(te same): kąt med 89.0 śr 80.3 deg, <15deg 0.00, wys.max 0.46 (cel ~1), MSE 0.0236
+ep  70 loss 0.0172 (938s) | train(te same): kąt med 58.3 śr 61.1 deg, <15deg 0.12, wys.max 0.41 (cel ~1), MSE 0.0184
+ep  80 loss 0.0171 (1050s) | train(te same): kąt med 66.1 śr 63.5 deg, <15deg 0.12, wys.max 0.38 (cel ~1), MSE 0.0170
+ep  90 loss 0.0169 (1180s) | train(te same): kąt med 76.8 śr 70.0 deg, <15deg 0.12, wys.max 0.42 (cel ~1), MSE 0.0195
+ep 100 loss 0.0170 (1289s) | train(te same): kąt med 76.8 śr 70.1 deg, <15deg 0.12, wys.max 0.38 (cel ~1), MSE 0.0169
